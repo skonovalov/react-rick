@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--offset-half);
+  margin-left: auto;
+  width: 164px;
+}
+
+.menu-item {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.menu-item:hover {
+  background-color: #e1e1e1;
+  border-radius: 4px;
+}

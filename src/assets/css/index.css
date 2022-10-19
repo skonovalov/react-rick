@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --offset: 15px;
+  --offset-half: 8px;
+  --border-color: #e7e8ec;
+  --border-radius: 12px;
+
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --fw-regular: 400;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "sidebar content";
+  grid-template-rows: 48px 1fr;
+  grid-template-columns: auto auto;
+  height: 100vh;
+  min-width: 1004px;
+  gap: var(--offset);
+}
+
+.content {
+  grid-area: content;
+  width: 795px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  /* background-color: white;
+  border: 1px solid var(--border-color); */
+}
+
+.container {
+  width: 1004px;
+  max-width: 100%;
+  padding: 0 var(--offset);
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: var(--fw-bold);
+}

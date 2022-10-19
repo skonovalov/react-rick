@@ -1,0 +1,17 @@
+.header {
+  grid-area: header;
+  grid-column: span 2;
+  height: 48px;
+  background-color: white;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header .avatar {
+  margin-left: auto;
+}
