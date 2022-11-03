@@ -1,13 +1,20 @@
 interface Props {
+  alt: string;
   className?: string;
+  src: string;
 }
 
-function CharacterImage({ className }: Props) {
+function CharacterImage({ alt = '', className, src = '' }: Props) {
   return (
     <div
       className={`CharacterImage ${className}`}
     >
-      CharacterImage
+      <img
+        className="rounded-lg"
+        src={src}
+        alt={alt}
+        loading="lazy"
+      />
     </div>
   );
 }
